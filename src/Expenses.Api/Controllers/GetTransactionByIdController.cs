@@ -20,7 +20,7 @@ public class GetTransactionByIdController : ControllerBase
     [HttpGet]
     [Route("api/transactions/{id:guid}")]
     public async Task<IActionResult> GetTransactionById(
-        Guid id,
+        [FromRoute] Guid id,
         CancellationToken cancellationToken
     )
     {

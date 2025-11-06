@@ -21,7 +21,7 @@ public class DeleteTransactionByIdController : ControllerBase
     [HttpDelete]
     [Route("api/transactions/{id:guid}")]
     public async Task<IActionResult> DeleteTransactionById(
-        Guid id,
+        [FromRoute] Guid id,
         CancellationToken cancellationToken
     )
     {
