@@ -1,4 +1,4 @@
-# Expense Tracking SPA
+# Expenses Tracking SPA
 
 ## Backend: ASP.NET
 
